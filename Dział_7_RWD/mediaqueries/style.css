@@ -1,0 +1,29 @@
+body {
+	height: 100vh;
+	font-size: 48px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.square {
+	width: 50%;
+	height: 50%;
+	margin: 300px auto;
+	background-color: royalblue;
+	border: 3px solid black;
+	border-radius: 25px;
+}
+
+/* zazwyczaj dajemy all */
+/* @meda (min-width: 500px) and (max-width: 600px) */
+
+@media print {
+	/* jak wyglada po drukowaniu */
+	.square {
+		border: 30px solid red;
+	}
+}
