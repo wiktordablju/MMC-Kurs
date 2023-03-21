@@ -1,7 +1,7 @@
 // Zmienne
 $main-color: gold;
 
-// W SCSS mozna wygodnie wszystko zagniezdzac
+// // W SCSS mozna wygodnie wszystko zagniezdzac
 nav {
 	ul {
 		list-style: none;
@@ -15,7 +15,7 @@ nav {
 	}
 }
 
-// Mapy, cos jak slownik w pythonie tylko na zmienne :D
+// // Mapy, cos jak slownik w pythonie tylko na zmienne :D
 $colors: (
 	left: lime,
 	middle: gold,
@@ -50,4 +50,53 @@ body {
 	background-color: map-get($colors, right);
 }
 
-// Mixin
+// // Mixin
+// // Jesli przykladowo w projekcie mamy pare stylow ktore bedziemy na rozne elementy uzywac over and over to bardzo przydatne do uporzadkowania kodu
+@mixin addons {
+	border-radius: 25px;
+	background-color: gold;
+}
+
+$bg-color: gold;
+@mixin color($bg-color) {
+	background-color: $bg-color;
+}
+
+.square {
+	margin: 30px;
+	height: 200px;
+	width: 200px;
+	border: 5px solid black;
+	@include addons;
+}
+
+.success {
+	@include color(lime);
+}
+
+.warning {
+	@include color(tomato);
+}
+
+// import
+@import "./colors";
+@import "./reset";
+
+.square {
+	margin: 30px;
+	height: 200px;
+	width: 200px;
+	border: 5px solid black;
+}
+
+.one {
+	background-color: $red;
+}
+
+.two {
+	background-color: $green;
+}
+
+.three {
+	background-color: $gold;
+}
