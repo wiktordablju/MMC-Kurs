@@ -35,4 +35,83 @@ body {
 
 .item3 {
   background-color: tomato;
+}
+
+.square {
+  margin: 30px;
+  height: 200px;
+  width: 200px;
+  border: 5px solid black;
+  border-radius: 25px;
+  background-color: gold;
+}
+
+.success {
+  background-color: lime;
+}
+
+.warning {
+  background-color: tomato;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.square {
+  margin: 30px;
+  height: 200px;
+  width: 200px;
+  border: 5px solid black;
+}
+
+.one {
+  background-color: tomato;
+}
+
+.two {
+  background-color: lime;
+}
+
+.three {
+  background-color: gold;
 }/*# sourceMappingURL=style.css.map */
