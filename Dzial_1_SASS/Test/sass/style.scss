@@ -1,0 +1,102 @@
+// Zmienne
+$main-color: gold;
+
+// // W SCSS mozna wygodnie wszystko zagniezdzac
+nav {
+	ul {
+		list-style: none;
+		li {
+			background-color: $main-color;
+			font-size: 30px;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// // Mapy, cos jak slownik w pythonie tylko na zmienne :D
+$colors: (
+	left: lime,
+	middle: gold,
+	right: tomato,
+);
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #333;
+	font: sans-serif;
+}
+
+.square {
+	margin: 50px;
+	width: 200px;
+	height: 200px;
+	border: 5px solid black;
+}
+
+.item1 {
+	background-color: map-get($colors, left);
+}
+
+.item2 {
+	background-color: map-get($colors, middle);
+}
+
+.item3 {
+	background-color: map-get($colors, right);
+}
+
+// // Mixin
+// // Jesli przykladowo w projekcie mamy pare stylow ktore bedziemy na rozne elementy uzywac over and over to bardzo przydatne do uporzadkowania kodu
+@mixin addons {
+	border-radius: 25px;
+	background-color: gold;
+}
+
+$bg-color: gold;
+@mixin color($bg-color) {
+	background-color: $bg-color;
+}
+
+.square {
+	margin: 30px;
+	height: 200px;
+	width: 200px;
+	border: 5px solid black;
+	@include addons;
+}
+
+.success {
+	@include color(lime);
+}
+
+.warning {
+	@include color(tomato);
+}
+
+// import
+@import "./colors";
+@import "./reset";
+
+.square {
+	margin: 30px;
+	height: 200px;
+	width: 200px;
+	border: 5px solid black;
+}
+
+.one {
+	background-color: $red;
+}
+
+.two {
+	background-color: $green;
+}
+
+.three {
+	background-color: $gold;
+}
