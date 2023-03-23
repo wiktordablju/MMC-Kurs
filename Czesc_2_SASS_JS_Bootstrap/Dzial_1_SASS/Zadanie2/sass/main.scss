@@ -1,0 +1,57 @@
+@use "./reset" as reset;
+@use "./colors" as colors;
+
+@mixin test {
+	width: 100px;
+	height: 100px;
+	margin: 30px auto;
+	background-color: lime;
+	border: 3px solid black;
+	border-radius: 50%;
+}
+
+html {
+	font-size: 10px;
+
+	h1 {
+		font-size: 3rem;
+	}
+	h2 {
+		font-size: 2.4rem;
+	}
+
+	h3 {
+		font-size: 1.8rem;
+	}
+
+	p {
+		font-size: 1.6rem;
+	}
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+	section {
+		height: 25vh;
+		text-align: center;
+		.circle {
+			@include test;
+		}
+	}
+	.odd {
+		background-color: colors.$odd;
+	}
+
+	.even {
+		background-color: colors.$even;
+	}
+
+	h1,
+	h2,
+	h3 {
+		color: colors.$header;
+	}
+}

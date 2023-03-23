@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 10px;
+}
+html h1 {
+  font-size: 3rem;
+}
+html h2 {
+  font-size: 2.4rem;
+}
+html h3 {
+  font-size: 1.8rem;
+}
+html p {
+  font-size: 1.6rem;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main section {
+  height: 25vh;
+  text-align: center;
+}
+main section .circle {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto;
+  background-color: lime;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+main .odd {
+  background-color: lime;
+}
+main .even {
+  background-color: royalblue;
+}
+main h1,
+main h2,
+main h3 {
+  color: tomato;
+}/*# sourceMappingURL=main.css.map */

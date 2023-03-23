@@ -1,86 +1,87 @@
-// Zmienne
-$main-color: gold;
+// // Zmienne
+// $main-color: gold;
 
-// // W SCSS mozna wygodnie wszystko zagniezdzac
-nav {
-	ul {
-		list-style: none;
-		li {
-			background-color: $main-color;
-			font-size: 30px;
-			a {
-				text-decoration: none;
-			}
-		}
-	}
-}
+// // // W SCSS mozna wygodnie wszystko zagniezdzac
+// nav {
+// 	ul {
+// 		list-style: none;
+// 		li {
+// 			background-color: $main-color;
+// 			font-size: 30px;
+// 			a {
+// 				text-decoration: none;
+// 			}
+// 		}
+// 	}
+// }
 
-// // Mapy, cos jak slownik w pythonie tylko na zmienne :D
-$colors: (
-	left: lime,
-	middle: gold,
-	right: tomato,
-);
+// // // Mapy, cos jak slownik w pythonie tylko na zmienne :D
+// $colors: (
+// 	left: lime,
+// 	middle: gold,
+// 	right: tomato,
+// );
 
-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	background-color: #333;
-	font: sans-serif;
-}
+// body {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	height: 100vh;
+// 	background-color: #333;
+// 	font: sans-serif;
+// }
 
-.square {
-	margin: 50px;
-	width: 200px;
-	height: 200px;
-	border: 5px solid black;
-}
+// .square {
+// 	margin: 50px;
+// 	width: 200px;
+// 	height: 200px;
+// 	border: 5px solid black;
+// }
 
-.item1 {
-	background-color: map-get($colors, left);
-}
+// .item1 {
+// 	background-color: map-get($colors, left);
+// }
 
-.item2 {
-	background-color: map-get($colors, middle);
-}
+// .item2 {
+// 	background-color: map-get($colors, middle);
+// }
 
-.item3 {
-	background-color: map-get($colors, right);
-}
+// .item3 {
+// 	background-color: map-get($colors, right);
+// }
 
-// // Mixin
-// // Jesli przykladowo w projekcie mamy pare stylow ktore bedziemy na rozne elementy uzywac over and over to bardzo przydatne do uporzadkowania kodu
-@mixin addons {
-	border-radius: 25px;
-	background-color: gold;
-}
+// // // Mixin
+// // // Jesli przykladowo w projekcie mamy pare stylow ktore bedziemy na rozne elementy uzywac over and over to bardzo przydatne do uporzadkowania kodu
+// @mixin addons {
+// 	border-radius: 25px;
+// 	background-color: gold;
+// }
 
-$bg-color: gold;
-@mixin color($bg-color) {
-	background-color: $bg-color;
-}
+// $bg-color: gold;
+// @mixin color($bg-color) {
+// 	background-color: $bg-color;
+// }
 
-.square {
-	margin: 30px;
-	height: 200px;
-	width: 200px;
-	border: 5px solid black;
-	@include addons;
-}
+// .square {
+// 	margin: 30px;
+// 	height: 200px;
+// 	width: 200px;
+// 	border: 5px solid black;
+// 	@include addons;
+// }
 
-.success {
-	@include color(lime);
-}
+// .success {
+// 	@include color(lime);
+// }
 
-.warning {
-	@include color(tomato);
-}
+// .warning {
+// 	@include color(tomato);
+// }
 
-// import
-@import "./colors";
-@import "./reset";
+// use, jest jeszcze import ale nie jest zalecany
+@use "./colors" as colors;
+@use "./reset" as reset;
+// @use "./reset" as *;  wtedy nie trzeba uzywac nazwy przed zmiennymi ale za to ryzykujemy nadpisaniem
 
 .square {
 	margin: 30px;
@@ -90,13 +91,13 @@ $bg-color: gold;
 }
 
 .one {
-	background-color: $red;
+	background-color: colors.$red;
 }
 
 .two {
-	background-color: $green;
+	background-color: colors.$green;
 }
 
 .three {
-	background-color: $gold;
+	background-color: colors.$gold;
 }
