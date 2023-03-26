@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 50px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  color: #fff;
+  background-color: #333;
+}
+
+li:nth-child(even) {
+  color: pink;
+}
+
+span:first-of-type {
+  color: lime;
+}
+
+.test p:first-child,
+.test p:last-child {
+  color: tomato;
+}
+
+.title {
+  transition: color 0.3s;
+}
+
+.title:hover {
+  color: royalblue;
+}/*# sourceMappingURL=main.css.map */
