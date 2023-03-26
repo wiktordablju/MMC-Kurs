@@ -1,0 +1,42 @@
+@use "./reset" as reset;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Roboto Mono", monospace;
+	font-size: 30px;
+	color: #fff;
+	background-color: #333;
+	overflow: hidden;
+}
+
+// ANIMACJE
+
+// W keyframes dajemy co sie dzieje podczas animacji, zeby jej uzyc na elemencie animowanym uzywamy:
+// animation: nazwa / czas / timing-func / delay /ilosc powtorze /fill mode
+
+// animation: color 5s ease-in-out 1s infinite;
+// animation-direction: alternate; // reverse, alternate fajne rzeczy
+
+// @keyframes color {
+// 	0% {
+// 		height: 400px;
+// 		background-color: gold;
+// 	}
+// 	50% {
+// 		width: 800px;
+// 		background-color: royalblue;
+// 	}
+// 	100% {
+// 		width: 200px;
+// 		background-color: lime;
+// 	}
+// }
+
+// .square:hover { teraz hoverujac nie odpalamy animacje tylko ja stopujemy
+//     animation-play-state: paused;
+// }
