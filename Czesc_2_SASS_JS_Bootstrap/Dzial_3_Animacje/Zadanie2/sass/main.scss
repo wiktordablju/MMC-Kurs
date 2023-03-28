@@ -1,0 +1,43 @@
+@use "./reset" as reset;
+
+.square,
+.circle {
+	height: 300px;
+	width: 300px;
+}
+.circle {
+	border-radius: 50%;
+	background-color: lime;
+	animation: circle 2s ease 4s;
+}
+
+.square {
+	background-color: tomato;
+	animation: square 4s forwards;
+}
+
+@keyframes square {
+	0% {
+		height: 300px;
+		width: 300px;
+		background-color: tomato;
+	}
+	50% {
+		height: 300px;
+		width: 600px;
+	}
+	100% {
+		width: 300px;
+		height: 600px;
+		background-color: gold;
+	}
+}
+
+@keyframes circle {
+	from {
+		background-color: lime;
+	}
+	to {
+		background-color: royalblue;
+	}
+}

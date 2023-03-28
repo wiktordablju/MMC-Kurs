@@ -1,0 +1,179 @@
+@use "./reset";
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 36px;
+	color: #fff;
+	background-color: #333;
+	overflow: hidden;
+}
+
+// Start of Sky
+.sky {
+	position: relative;
+	height: 60vh;
+	background-color: royalblue;
+	animation: dayCycle 5s linear infinite;
+
+	.sun {
+		position: absolute;
+		top: 50px;
+		left: 100px;
+		width: 90px;
+		height: 90px;
+		border-radius: 50%;
+		background-color: orange;
+		box-shadow: 0 0 70px yellow;
+		animation: sun 5s linear infinite;
+	}
+}
+
+// Sky and Sun animations
+@keyframes dayCycle {
+	0% {
+		background-color: royalblue;
+	}
+	50% {
+		background-color: blue;
+	}
+	100% {
+		background-color: royalblue;
+	}
+}
+
+@keyframes sun {
+	0% {
+		position: absolute;
+		top: -25px;
+		left: 100px;
+		width: 90px;
+		height: 90px;
+		border-radius: 50%;
+		background-color: orange;
+		box-shadow: 0 0 70px yellow;
+	}
+
+	100% {
+		top: 110%;
+	}
+}
+// Sky and Sun animations
+// End of Sky
+
+// Beginning of Ground
+.ground {
+	position: relative;
+	bottom: 0;
+	height: 40vh;
+	background-color: #4a3535;
+
+	.grass {
+		position: absolute;
+		top: 0;
+		height: 200px;
+		width: 100%;
+		background-color: lime;
+	}
+
+	.road {
+		position: absolute;
+		top: 30px;
+		height: 120px;
+		width: 100%;
+		background-color: gray;
+
+		// Car
+		.car {
+			position: absolute;
+			top: -15px;
+			left: 200px;
+			height: 70px;
+			width: 150px;
+			background-color: tomato;
+			border-radius: 15px;
+			animation: carDriving 5s linear infinite;
+		}
+
+		.car::after,
+		.car::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			width: 40px;
+			height: 35px;
+			background-color: tomato;
+		}
+
+		.car::after {
+			right: -20px;
+			border-top-right-radius: 10px;
+		}
+
+		.car::before {
+			left: -20px;
+		}
+
+		// Wheels
+		.wheel {
+			position: absolute;
+			bottom: -10px;
+			width: 35px;
+			height: 35px;
+			background-color: black;
+			border-radius: 50%;
+			border: 2px dashed #999;
+			animation: wheelsSpinning 2s linear infinite;
+		}
+
+		.front-wheel {
+			right: 8px;
+			z-index: 1;
+		}
+
+		.rear-wheel {
+			left: 8px;
+		}
+
+		@keyframes wheelsSpinning {
+			0% {
+				rotate: 0deg;
+			}
+			100% {
+				rotate: 360deg;
+			}
+		}
+
+		// Wheels
+		.window {
+			position: absolute;
+			top: 5px;
+			height: 30px;
+			width: 50px;
+			background-color: blue;
+		}
+
+		.front-window {
+			right: 0;
+			border-top-right-radius: 9px;
+		}
+
+		.rear-window {
+			left: 0;
+			border-top-left-radius: 9px;
+		}
+	}
+
+	@keyframes carDriving {
+		0% {
+			position: absolute;
+			left: 0;
+		}
+		100% {
+			position: absolute;
+			left: 100%;
+		}
+	}
+	// Car
+}
+
+// End of Ground
