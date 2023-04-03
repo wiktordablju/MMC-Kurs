@@ -18,3 +18,38 @@ if (x == y) {
 } else {
 	console.log("brak essy")
 }
+
+const passLength = 4
+if (passLength >= 10) {
+	console.log("Masz bardzo dobre haslo")
+} else if (passLength > 5 && passLength < 10) {
+	console.log("Masz spoko haslo")
+} else {
+	console.log("masz za slabe haslo")
+}
+
+// wartosc consta to tablica, zawartosc tablicy moze byc modyfikowana
+const colors = ["red", "green", "blue"]
+console.log(colors.length)
+colors.push("rozowy")
+console.log(colors)
+
+// petle for
+for (let i = 0; i < 3; i++) {
+	console.log(i)
+}
+
+const fruits = ["banan", "jablko", "mandarynka"]
+
+for (i = 0; i < fruits.length; i++) {
+	console.log(fruits[i])
+}
+
+// function
+
+function test() {
+	console.log("testuje funkcje essa:D")
+}
+
+test()
+
