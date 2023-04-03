@@ -53,3 +53,27 @@ function test() {
 
 test()
 
+// Pobieranie elementow
+
+// Wybiera pierwszy napotkany paragraf/klasa/cokolwiek
+const p = document.querySelector(".test")
+console.log(p)
+
+const liItems = document.querySelectorAll("li")
+console.log(liItems)
+
+// add event listener
+const btn1 = document.querySelector("#btn1")
+const btn2 = document.querySelector(".btn2")
+
+function button1Click() {
+	console.log("Kliknieto przycisk 1")
+}
+
+function operation() {
+	console.log(2 + 2)
+}
+
+btn1.addEventListener("click", button1Click)
+
+btn2.addEventListener("click", operation)
