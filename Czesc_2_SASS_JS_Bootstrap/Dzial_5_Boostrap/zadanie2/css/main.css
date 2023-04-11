@@ -41,22 +41,16 @@ table {
   border-spacing: 0;
 }
 
-.container-fluid {
-  background-color: gold;
-}
-
 body {
+  margin: 50px;
+  height: 100vh;
   background-color: #333;
-  font-size: 36px;
-  color: #fff;
+  font-size: 46px;
 }
 
-.container {
-  margin-top: 300px;
-  text-align: center;
-  border: 3px solid white;
-}
-
-[class*=col] {
-  border: 2px solid lime;
+div {
+  margin: 5px;
+  padding: 20px;
+  background-color: #ddd;
+  border: 2px solid black;
 }/*# sourceMappingURL=main.css.map */
