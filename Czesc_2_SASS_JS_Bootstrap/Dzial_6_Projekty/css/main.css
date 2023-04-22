@@ -1,0 +1,109 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Comfortaa", cursive;
+  background-color: #444;
+}
+
+#navbar {
+  z-index: 2;
+  width: 100vw;
+}
+#navbar .nav-link,
+#navbar .navbar-brand,
+#navbar i {
+  text-transform: uppercase;
+  color: #fff;
+}
+#navbar .nav-link:hover {
+  color: #039dff;
+}
+#navbar .active {
+  color: #039dff;
+}
+#navbar .navbar-brand i {
+  font-weight: bold;
+  transition: 0.3s;
+}
+#navbar .navbar-brand i:hover {
+  color: #039dff;
+}
+#navbar .fa-bars {
+  padding: 10px;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(./../img/desktop/console.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.home .home-text {
+  color: #fff;
+  font-size: 1.6rem;
+  z-index: 2;
+}
+.home .home-text .gamers {
+  color: #039dff;
+}
+.home .home-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 41, 46, 0.5764705882);
+}
+
+#about-us {
+  height: 100vh;
+}
+
+#portfolio {
+  height: 100vh;
+  background-color: #fff;
+}/*# sourceMappingURL=main.css.map */
