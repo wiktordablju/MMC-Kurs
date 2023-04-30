@@ -23,7 +23,7 @@
 			crossorigin="anonymous"
 		></script>
 	</head>
-	<body data-bs-spy="scroll" data-bs-target="#navbar">
+	<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="51">
 		<!-- NAVBAR -->
 		<nav
 			id="navbar"
@@ -70,7 +70,7 @@
 			</div>
 		</div>
 
-		<!-- ABOUT US -->
+		<!-- ABOUT US UP-->
 		<div id="about-us" class="about-us bg-light py-5">
 			<div class="container">
 				<h2>o nas</h2>
@@ -115,31 +115,31 @@
 			</div>
 		</div>
 
-		<!-- PORTFOLIO -->
-		<div class="aboutus-hero py-5" id="portfolio">
+		<!-- ABOUT-US-DOWN -->
+		<div class="aboutus-hero py-5">
 			<div class="aboutus-shadow"></div>
-			<div class="container">
+			<div class="container py-5">
 				<h2>tworzymy gry na platformy</h2>
 				<div class="underline"></div>
 				<div class="row">
-					<div class="col-sm-6 col-md-4 text-center aboutus-hover">
+					<div class="col-lg-4 text-center aboutus-hero-item">
 						<p><i class="fab fa-steam-square"></i></p>
-						<p class="aboutus-card-title mb-1">PC</p>
-						<p class="aboutus-card-text">
+						<p class="aboutus-hero-title mb-1">PC</p>
+						<p class="aboutus-hero-text">
 							Graj ze znajomymi na swoim blaszaku!
 						</p>
 					</div>
-					<div class="col-sm-6 col-md-4 text-center aboutus-hover">
+					<div class="col-lg-4 text-center aboutus-hero-item">
 						<p><i class="fab fa-playstation"></i></p>
-						<p class="aboutus-card-title mb-1">PlayStation</p>
-						<p class="aboutus-card-text">
+						<p class="aboutus-hero-title mb-1">PlayStation</p>
+						<p class="aboutus-hero-text">
 							Gry świetnie prezentują się na konsoli od Sony!
 						</p>
 					</div>
-					<div class="col-sm-6 col-md-4 text-center aboutus-hover">
+					<div class="col-lg-4 text-center aboutus-hero-item">
 						<p><i class="fab fa-xbox"></i></p>
-						<p class="aboutus-card-title mb-1">Xbox</p>
-						<p class="aboutus-card-text">
+						<p class="aboutus-hero-title mb-1">Xbox</p>
+						<p class="aboutus-hero-text">
 							Fani Xboxa spędzą z nami mnóstwo godzin!
 						</p>
 					</div>
@@ -147,6 +147,116 @@
 			</div>
 		</div>
 
+		<!-- PORTFOLIO -->
+		<div class="portfolio bg-light py-5 px-5" id="portfolio">
+			<div class="container">
+				<h2>portfolio</h2>
+				<!-- PORTFOLIO MOBILE -->
+				<div class="card-group d-lg-none">
+					<div class="card me-sm-3">
+						<img
+							src="./img/mobile/needforspeed.jpg"
+							class="card-img-top"
+							alt="Need for speed okladka"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Need for speed</h5>
+							<p class="card-text">
+								This is a wider card with supporting text below as a natural
+								lead-in to additional content. This content is a little bit
+								longer.
+							</p>
+						</div>
+					</div>
+					<div class="card">
+						<img
+							src="./img/mobile/fifa.jpg"
+							class="card-img-top"
+							alt="Fifa okladka"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Fifa</h5>
+							<p class="card-text">
+								This card has supporting text below as a natural lead-in to
+								additional content.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- PORTFOLIO DESKTOP -->
+
+				<div
+					id="carouselExampleCaptions"
+					class="carousel slide d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block"
+				>
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#carouselExampleCaptions"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleCaptions"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img
+								src="./img/desktop/needforspeed.jpg"
+								class="d-block w-100"
+								alt="Need for Speed cover image"
+							/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Need for Speed</h5>
+								<p>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+									Expedita fugiat laudantium aliquid in inventore quae!
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="./img/desktop/fifa.jpg"
+								class="d-block w-100"
+								alt="FIFA cover image"
+							/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>FIFA</h5>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Laboriosam praesentium dicta distinctio ut, quos delectus.
+								</p>
+							</div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</div>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

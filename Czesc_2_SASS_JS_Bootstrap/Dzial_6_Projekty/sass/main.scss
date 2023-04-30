@@ -110,7 +110,7 @@ h2 {
 	}
 }
 
-// ABOUT-US
+// ABOUT-US UP
 .about-us {
 	height: 35vh;
 	width: calc(100vw - (var(--scrollbar-width)));
@@ -138,7 +138,7 @@ h2 {
 	}
 }
 
-// PORTOFLIO
+// ABOUT-US DOWN
 .aboutus-hero {
 	position: relative;
 	background-image: url("../img/mobile/cpuimage.jpg");
@@ -151,6 +151,17 @@ h2 {
 	.row {
 		margin-top: 1%;
 	}
+
+	.aboutus-hero-item {
+		margin: 10px 0;
+
+		i {
+			font-size: 3.6rem;
+		}
+		.aboutus-hero-title {
+			font-size: 2.4rem;
+		}
+	}
 	.aboutus-shadow {
 		position: absolute;
 		top: 0;
@@ -158,6 +169,28 @@ h2 {
 		height: 100%;
 		background-color: rgba(0, 0, 0, 0.7);
 		z-index: -5;
+	}
+}
+
+// PORTFOLIO
+
+.portfolio {
+	.carusel {
+		margin: 0 auto;
+		.carousel-item {
+			position: relative;
+		}
+
+		.carousel-caption {
+			position: absolute;
+			left: 0;
+			right: 0;
+			padding: 40px 0;
+			background-color: #00000088;
+		}
+		.carousel-indicators {
+			padding-bottom: 20px;
+		}
 	}
 }
 
@@ -179,14 +212,22 @@ h2 {
 			}
 		}
 	}
-	.about-us {
-		height: 140vh;
-	}
 }
 
 @media (min-height: 400px) {
 	.about-us {
+		height: 140vh;
+	}
+}
+@media (min-height: 650px) {
+	.about-us {
 		height: 120vh;
+	}
+}
+
+@media (min-height: 700px) {
+	.about-us {
+		height: 110vh;
 	}
 }
 
@@ -220,8 +261,8 @@ h2 {
 
 // PC
 @media (min-width: 1200px) {
-	html {
-		scroll-padding-top: 51px;
+	nav {
+		height: 51px;
 	}
 
 	#navbar {
@@ -238,7 +279,7 @@ h2 {
 		}
 	}
 
-	.portfolio {
+	.aboutus-hero {
 		background-image: url("./../img/desktop/cpuimage.jpg");
 	}
 	.about-us {
