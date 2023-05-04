@@ -192,21 +192,58 @@ h2 {
   z-index: -5;
 }
 
-.portfolio .carusel {
+.portfolio {
+  background-color: #ebecf2;
+}
+.portfolio .container .carusel .carousel-inner {
   margin: 0 auto;
 }
-.portfolio .carusel .carousel-item {
+.portfolio .container .carousel-indicators {
+  padding-bottom: 20px;
+}
+.portfolio .container .carousel-inner .carousel-item {
   position: relative;
 }
-.portfolio .carusel .carousel-caption {
+.portfolio .container .carousel-inner .carousel-item .carousel-caption {
   position: absolute;
   left: 0;
   right: 0;
   padding: 40px 0;
-  background-color: rgba(0, 0, 0, 0.5333333333);
+  background-color: rgba(0, 0, 0, 0.514);
 }
-.portfolio .carusel .carousel-indicators {
-  padding-bottom: 20px;
+
+.prices .container .text {
+  font-size: 1.3rem;
+}
+.prices .price-box {
+  margin: 20px 10px;
+  font-size: 1.5rem;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+.prices .price-box h3 {
+  text-transform: uppercase;
+  color: #039dff;
+}
+.prices .price-box span {
+  font-weight: bold;
+}
+.prices .price-box i {
+  font-size: 2.4rem;
+  padding: 0 5px;
+}
+.prices .price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.prices .price-box .price-tag {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.prices .price-box:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 766px) {
