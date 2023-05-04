@@ -175,22 +175,68 @@ h2 {
 // PORTFOLIO
 
 .portfolio {
-	.carusel {
-		margin: 0 auto;
-		.carousel-item {
-			position: relative;
-		}
-
-		.carousel-caption {
-			position: absolute;
-			left: 0;
-			right: 0;
-			padding: 40px 0;
-			background-color: #00000088;
+	background-color: color.$bg-color;
+	.container {
+		.carusel {
+			.carousel-inner {
+				margin: 0 auto;
+			}
 		}
 		.carousel-indicators {
 			padding-bottom: 20px;
 		}
+		.carousel-inner {
+			.carousel-item {
+				position: relative;
+				.carousel-caption {
+					position: absolute;
+					left: 0;
+					right: 0;
+					padding: 40px 0;
+					background-color: rgba(0, 0, 0, 0.514);
+				}
+			}
+		}
+	}
+}
+
+// PRICES
+
+.prices {
+	.container {
+		.text {
+			font-size: 1.3rem;
+		}
+	}
+	.price-box {
+		margin: 20px 10px;
+		font-size: 1.5rem;
+		padding: 30px;
+		background-color: white;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+		transition: transform 0.3s;
+		h3 {
+			text-transform: uppercase;
+			color: color.$main;
+		}
+		span {
+			font-weight: bold;
+		}
+		i {
+			font-size: 2.4rem;
+			padding: 0 5px;
+		}
+		button {
+			padding: 10px 20px;
+			text-transform: uppercase;
+		}
+		.price-tag {
+			font-weight: bold;
+			font-size: 3rem;
+		}
+	}
+	.price-box:hover {
+		transform: scale(1.05);
 	}
 }
 
