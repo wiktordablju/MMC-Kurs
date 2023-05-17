@@ -240,6 +240,44 @@ h2 {
 	}
 }
 
+// TEAM
+.team {
+	height: 75vh;
+	background-image: url('./../img/desktop/team-background.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	
+	h2 {
+		color: #fff;
+	}
+	.container {
+		.card {
+			height: 300px;
+			margin: 10px;
+			border: 0;
+			font-size: 1.2rem;
+			transition: transform 0.3s;
+			img {
+				width: 100%;
+				height: 50%;
+			}
+			.card-footer {
+				background-color: #fff;
+				border: 0;
+				i {
+					font-size: 1.5rem;
+					color: color.$main;
+				}
+			
+			}
+		}
+		.card:hover {
+			transform: scale(1.05);
+		}
+	}
+}
+
 // MEDIA
 // PHONES
 @media (max-width: 766px) {
