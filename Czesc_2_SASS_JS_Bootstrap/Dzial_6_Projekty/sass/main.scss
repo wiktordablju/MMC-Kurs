@@ -4,7 +4,6 @@
 body {
 	position: relative;
 	font-family: "Comfortaa", cursive;
-	background-color: #444;
 }
 
 // Klasy ogolne
@@ -172,7 +171,6 @@ h2 {
 }
 
 // PORTFOLIO
-
 .portfolio {
 	background-color: color.$bg-color;
 	.container {
@@ -200,7 +198,6 @@ h2 {
 }
 
 // PRICES
-
 .prices {
 	.container {
 		.text {
@@ -285,7 +282,6 @@ h2 {
 }
 
 // ACHIEVEMENTS
-
 .achievements {
 	i {
 		padding: 10px;
@@ -305,6 +301,62 @@ h2 {
 	.achievement-text {
 		font-size: 1.3rem;
 		text-transform: uppercase;
+	}
+}
+
+// CONTACT
+.contact {
+	position: relative;
+	background-image: url("../img/mobile/contact.jpg");
+	background-position: bottom;
+	background-attachment: fixed;
+	background-size: cover;
+	z-index: 0;
+	font-size: 1.3rem;
+
+	.section-title {
+		color: lightgray;
+	}
+
+	.underline {
+		background-color: lightgray;
+	}
+
+	.contact-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 9, 27, 0.85);
+		z-index: -5;
+	}
+
+	.contact-us {
+		display: flex;
+		align-items: center;
+		color: white;
+
+		.contact-item {
+			margin: 30px 0;
+			h3 {
+				margin-bottom: 15px;
+				text-transform: uppercase;
+				letter-spacing: 1.5px;
+			}
+
+			.social-media {
+				font-size: 2.6rem;
+				a {
+					padding: 10px;
+					color: white;
+					transition: color 0.3s;
+				}
+				a:hover {
+					color: color.$main;
+				}
+			}
+		}
 	}
 }
 
