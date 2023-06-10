@@ -23,6 +23,8 @@
 			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
 		/>
 
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
 		<link rel="stylesheet" href="./css/main.css" />
 		<script
 			src="https://kit.fontawesome.com/90b79f9a9f.js"
@@ -68,12 +70,24 @@
 		<div id="home">
 			<div class="home">
 				<div class="home-text">
-					<span>WITAJCIE W PRO<span class="gamers">GAMERS</span> </span>
-					<p>W miejscu gdzie gry tworzymy z pasją</p>
-					<a href="#about-us" class="btn btn-outline-light">poznaj nas</a>
+					<span data-aos="fade-up" data-aos-delay="200"
+						>WITAJCIE W PRO<span class="gamers">GAMERS</span>
+					</span>
+					<p data-aos="fade-up" data-aos-delay="400">
+						W miejscu gdzie gry tworzymy z pasją
+					</p>
+					<a
+						data-aos="fade-up"
+						data-aos-delay="600"
+						href="#about-us"
+						class="btn btn-outline-light"
+						>poznaj nas</a
+					>
 				</div>
 				<div class="home-bg"></div>
-				<a href="#about-us"> <i class="fa-solid fa-chevron-down"></i></a>
+				<a href="#about-us">
+					<i class="fa-solid fa-chevron-down bounce-top"></i
+				></a>
 			</div>
 		</div>
 
@@ -447,37 +461,61 @@
 			<div class="underline"></div>
 			<div class="container">
 				<div class="row text-center achievements-list">
-					<div class="col-md-6 col-lg-4 col-xl-2 achievement">
+					<div
+						class="col-md-6 col-lg-4 col-xl-2 achievement"
+						data-aos="zoom-in"
+						data-aos-delay="100"
+					>
 						<i class="fas fa-thumbs-up"></i>
 						<p class="achievement-number">100%</p>
 						<p class="achievement-text">zadowolonych klientow</p>
 					</div>
 
-					<div class="col-md-6 col-lg-4 col-xl-2 achievement">
+					<div
+						class="col-md-6 col-lg-4 col-xl-2 achievement"
+						data-aos="zoom-in"
+						data-aos-delay="50"
+					>
 						<i class="fas fa-trophy"></i>
 						<p class="achievement-number">37</p>
 						<p class="achievement-text">Zdobytych nagród</p>
 					</div>
 
-					<div class="col-md-6 col-lg-4 col-xl-2 achievement">
+					<div
+						class="col-md-6 col-lg-4 col-xl-2 achievement"
+						data-aos="zoom-in"
+						data-aos-delay="200"
+					>
 						<i class="fas fa-user-friends"></i>
 						<p class="achievement-number">143</p>
 						<p class="achievement-text">pracowników</p>
 					</div>
 
-					<div class="col-md-6 col-lg-4 col-xl-2 achievement">
+					<div
+						class="col-md-6 col-lg-4 col-xl-2 achievement"
+						data-aos="zoom-in"
+						data-aos-delay="250"
+					>
 						<i class="far fa-building"></i>
 						<p class="achievement-number">7</p>
 						<p class="achievement-text">nowoczesnych biur</p>
 					</div>
 
-					<div class="col-md-6 col-lg-4 col-xl-2 achievement">
+					<div
+						class="col-md-6 col-lg-4 col-xl-2 achievement"
+						data-aos="zoom-in"
+						data-aos-delay="320"
+					>
 						<i class="fas fa-dice"></i>
 						<p class="achievement-number">58</p>
 						<p class="achievement-text">stworzonych gier</p>
 					</div>
 
-					<div class="col-md-6 col-lg-4 col-xl-2 achievement">
+					<div
+						class="col-md-6 col-lg-4 col-xl-2 achievement"
+						data-aos="zoom-in"
+						data-aos-delay="370"
+					>
 						<i class="fas fa-share-alt"></i>
 						<p class="achievement-number">80.000</p>
 						<p class="achievement-text">fanow w social media</p>
@@ -548,6 +586,9 @@
 			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
 		></script>
 		<script src="./js/slicksettings.js"></script>
+		<!-- AOS -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="./js/aos.js"></script>
 		<!-- OWN JS -->
 		<script src="./js/main.js"></script>
 	</body>
